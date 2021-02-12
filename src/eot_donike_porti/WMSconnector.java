@@ -34,7 +34,7 @@ public class WMSconnector {
             //Setting the format of the image to request
             request.setFormat("image/png");
             //setting the dimensions of the requested image
-            request.setDimensions(250, 250);
+            request.setDimensions(2000, 2000);
             //setting the background of the image transparent
             request.setTransparent(true);
             //This sets CRS=EPSG:XXXX NOT SRS=EPSG:XXXX so it works only with Version=1.3.0
