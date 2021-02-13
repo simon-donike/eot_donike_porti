@@ -1,9 +1,11 @@
 package eot_donike_porti;
 
 import java.io.*;
+import java.util.*;
+import java.util.Arrays;
 
-public class CSVtoKML {
-        public static void read_convert_save(String csvFile) {
+public class CSVtoKML_polygon {
+        public static void read_convert_save_polygon(String csvFile) {
             try {
                 File file = new File(csvFile);
                 FileReader fr = new FileReader(file);
@@ -36,6 +38,36 @@ public class CSVtoKML {
                 while((line = br.readLine()) != null) {
                     /* create Array per line, separate based on semicolon */
                     tempArr = line.split(";");
+
+                    /* From here: create polygon fro central coordinate, append to array as string */
+                    String polygon = "";
+
+                    String a = tempArr[1];
+                    String b = tempArr[2];
+                    double a_double = Double.parseDouble(a);
+                    double b_double = Double.parseDouble(b);
+                    
+
+                    //System.out.println("_"+a+"_");
+
+                    /*
+                    double tempLon = Double.parseDouble(tempArr[1]);
+                    double tempLat = Double.parseDouble(tempArr[2]);
+                    double shift_by = 0.0012;
+
+                    polygon = "\n" + Double.toString(tempLon+0.0012) + "," + Double.toString(tempLat) + "\n"
+                            + Double.toString(tempLon) + "," + Double.toString(tempLat+0.0012) + "\n"
+                            + Double.toString(tempLon-0.0012) + "," + Double.toString(tempLat) + "\n"
+                            + Double.toString(tempLon) + "," + Double.toString(tempLat-0.0012) + "\n";
+
+                    // append polygon by copying arr & defining 1 longer, then adding polygon at end
+                    tempArr = Arrays.copyOf(tempArr, tempArr.length + 1);
+                    tempArr[tempArr.length - 1] = polygon;
+
+                    System.out.println(polygon);
+                    */
+
+
 
                     /* check if temp array is != id, therefore excluding the csv header line */
                     if (!tempArr[0].equals("id")) {
@@ -70,7 +102,7 @@ public class CSVtoKML {
                 kml = kml + "</Document>\n"+"</kml>";
 
                 /* Write KML */
-                FileWriter fw = new FileWriter("output.kml");
+                FileWriter fw = new FileWriter("output_polygon.kml");
                 fw.write(kml);
                 fw.close();
 

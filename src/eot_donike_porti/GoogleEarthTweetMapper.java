@@ -18,5 +18,6 @@ public class GoogleEarthTweetMapper {
 
         /* call method, pass csv path to csv reader & kml creator */
         CSVtoKML.read_convert_save("/Users/simondonike/Documents/GitHub/eot_donike_porti/out/production/final_assignment/eot_donike_porti/twitter.csv");
+        CSVtoKML_polygon.read_convert_save_polygon("/Users/simondonike/Documents/GitHub/eot_donike_porti/out/production/final_assignment/eot_donike_porti/twitter.csv");
     }
 }
