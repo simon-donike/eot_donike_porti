@@ -5,14 +5,14 @@ import java.awt.image.BufferedImage;
 public class GoogleEarthTweetMapper {
     public static void main(String[] args) {
 
-
+        /*
         // connect to WMSconnector class as wms_connection
         WMSconnector wms_connection = new WMSconnector();
         // get image as return from function getWMSimage in WMSconnector class
         BufferedImage buffered_image = wms_connection.getWMSimage();
         // pass image to saveImage function from WMSconnector class
         wms_connection.saveImage(buffered_image);
-
+        */
 
 
 

@@ -1,6 +1,7 @@
 package eot_donike_porti;
 
 import java.io.*;
+import java.lang.reflect.Array;
 import java.util.*;
 import java.util.Arrays;
 
@@ -42,13 +43,11 @@ public class CSVtoKML_polygon {
                     /* From here: create polygon fro central coordinate, append to array as string */
                     String polygon = "";
 
-                    String a = tempArr[1];
-                    String b = tempArr[2];
-                    double a_double = Double.parseDouble(a);
-                    double b_double = Double.parseDouble(b);
-                    
+                    String tempString = "70.02838340";
+                    Double tempDouble = Double.parseDouble(tempString);
+                    System.out.println(tempDouble);
 
-                    //System.out.println("_"+a+"_");
+
 
                     /*
                     double tempLon = Double.parseDouble(tempArr[1]);
