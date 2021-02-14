@@ -70,7 +70,7 @@ public class CSVtoKML_polygon {
                    'passed' is not flagged for containing 'ass' */
                 if (tweet.contains(" "+ profanity_list.get(i) + " ")) {
                     /* if tweet contains word, return kml string for according style */
-                    System.out.println(profanity_list.get(i));
+                    //System.out.println(profanity_list.get(i)); // print out found words
                     return "<styleUrl>#contains_profanity</styleUrl>";
                 } // close if statement
             } // close for loop

@@ -13,7 +13,7 @@ public class GoogleEarthTweetMapper {
         BufferedImage buffered_image = wms_connection.getWMSimage();
 
         /* pass image to saveImage function from WMSconnector class */
-        wms_connection.saveImage(buffered_image);
+        boolean b = wms_connection.saveImage(buffered_image);
 
 
 
