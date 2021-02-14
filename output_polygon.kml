@@ -4,7 +4,7 @@
 
 <Style id="no_profanity">
 <LineStyle>
-<width>1.5</width>
+<width>0.5</width>
 </LineStyle>
 <PolyStyle>
 <color>FF14F000</color>
@@ -13,7 +13,7 @@
 
 <Style id="contains_profanity">
 <LineStyle>
-<width>1.5</width>
+<width>0.5</width>
 </LineStyle>
 <PolyStyle>
 <color>FF1400FF</color>
@@ -21,7 +21,7 @@
 </Style>
 
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265459767630233600</value> </Data>
 		<Data name="Tweet"> <value>I looked,on the floor in class and screamed . When they all looked it thay said eww my friend said i squirted</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -696,7 +696,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265459892867977200</value> </Data>
 		<Data name="Tweet"> <value>@_chippychatz some kid I m my math class. He decides not to go to class and his sitting in front of me watching reply to you!</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -796,7 +796,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265459908177195000</value> </Data>
 		<Data name="Tweet"> <value>That made me mad af -.- dumbass niggaa</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -1171,7 +1171,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265459949725949950</value> </Data>
 		<Data name="Tweet"> <value>@MichelleKenneth still a ton luckier than many others #Sandy and my son is celebrating at his school today at least</value> </Data>
 		<Data name="Hashtags"> <value>Sandy</value> </Data>
@@ -1396,7 +1396,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265459983196512260</value> </Data>
 		<Data name="Tweet"> <value>I just miss my English class</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -1571,7 +1571,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460016138579970</value> </Data>
 		<Data name="Tweet"> <value>After a week off waking up for class feels awkward</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -2146,7 +2146,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460126452940800</value> </Data>
 		<Data name="Tweet"> <value>Thank the Lord I only have three hours of class today. My teacher cancelled this afternoon.</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -2221,7 +2221,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460142261288960</value> </Data>
 		<Data name="Tweet"> <value>I m rly about to hijack 1 of these Marist golf cars that are all over campus to take to my next class, I m freezing!❄⛄</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -2271,7 +2271,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460160842063870</value> </Data>
 		<Data name="Tweet"> <value>@acunha_8 LMAOOO she dressed up today to class 😒 she has scary blacks me up with gothic hair and cut signs on her face</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -2596,7 +2596,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460240554803200</value> </Data>
 		<Data name="Tweet"> <value>Is Recording the Chaplin Cast album today!!!! Goooo Chaplin👍👍👍👍👍☺☺☺☺☺☺@ChaplinBway @haypod22</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -2771,7 +2771,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460259768913920</value> </Data>
 		<Data name="Tweet"> <value>Well, thx u very much, sir ! RT@jsp716: @aquwila welcome back to hell, dear sir. Hahaha!!</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -2846,7 +2846,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460281180823550</value> </Data>
 		<Data name="Tweet"> <value>Where your plate, where s your lobster, where s your sea bass? @Stalley</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -3121,7 +3121,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460337917190140</value> </Data>
 		<Data name="Tweet"> <value>I ve come to the conclusion that artists are professional bullshitters #ArtistBenefits</value> </Data>
 		<Data name="Hashtags"> <value>ArtistBenefits</value> </Data>
@@ -3146,7 +3146,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460344552562700</value> </Data>
 		<Data name="Tweet"> <value>@Steph_dance school isn t open until Thursday? And heyy now, I think I was there the last time we had class haha</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -3296,7 +3296,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460382544576500</value> </Data>
 		<Data name="Tweet"> <value>@krisdionisio_ lmfaooooooooo omggggggggggggggggg idk what to do w myself I can t handle this.</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -3396,7 +3396,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460389284835330</value> </Data>
 		<Data name="Tweet"> <value>@nadine_ayala you re a fat dyke</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -3696,7 +3696,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460437498331140</value> </Data>
 		<Data name="Tweet"> <value>I have never seen so many people waiting for the train in NYC  @ MTA Subway - Delancey St/Essex St (F/J/M/Z) http://t.co/ItsNqXLc</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -3796,7 +3796,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460467475030000</value> </Data>
 		<Data name="Tweet"> <value>“@KeariHoover: I hate girls that won t say how they feel.”yeah that s stupid shit</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -3996,7 +3996,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460509158027260</value> </Data>
 		<Data name="Tweet"> <value>With my dustox in hand i kicked ass</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -4196,7 +4196,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460544969003000</value> </Data>
 		<Data name="Tweet"> <value>Spit wit the confidence of a ugly conceited bitch</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -4671,7 +4671,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460638862700540</value> </Data>
 		<Data name="Tweet"> <value>Sick .... Again! What the hell?</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -4696,7 +4696,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460644193636350</value> </Data>
 		<Data name="Tweet"> <value>If only girls are liking your desperate photo in trying to be sexy then it obviously isn t working #patheticpeople #gross #notevenskinny</value> </Data>
 		<Data name="Hashtags"> <value>patheticpeople,gross,notevenskinny</value> </Data>
@@ -4921,7 +4921,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460693573189630</value> </Data>
 		<Data name="Tweet"> <value>Queens bitches</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -5221,7 +5221,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460750267584500</value> </Data>
 		<Data name="Tweet"> <value>Back to class #finally</value> </Data>
 		<Data name="Hashtags"> <value>finally</value> </Data>
@@ -5521,7 +5521,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460782349828100</value> </Data>
 		<Data name="Tweet"> <value>@krisdionisio_ holy balls</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -6396,7 +6396,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460949601886200</value> </Data>
 		<Data name="Tweet"> <value>I m at NYU Clinical and Translational Science Institute (NY) http://t.co/jDvvGh9Q</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -6621,7 +6621,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265460988382421000</value> </Data>
 		<Data name="Tweet"> <value>@kajka_simple idk if you have seen any pics but seaside heights is destroyed so is the rest of the jersey shore.</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -6796,7 +6796,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461016765276160</value> </Data>
 		<Data name="Tweet"> <value>@vivalalexxx Bahaha, yeah he gets a little weird but his stuff is good. 👍</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -6846,7 +6846,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461026458304500</value> </Data>
 		<Data name="Tweet"> <value>Haha this was a hilarious morning. How many wrong classes do I have to walk into until I get to the right one?</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -7221,7 +7221,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461092875137020</value> </Data>
 		<Data name="Tweet"> <value>Also I paid more than double for that ride what the hell</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -7571,7 +7571,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461128371507200</value> </Data>
 		<Data name="Tweet"> <value>@riaaa_v @littleevass Nothing. 😏😷</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -7646,7 +7646,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461145090015230</value> </Data>
 		<Data name="Tweet"> <value>next class cancelled..done for the day #naptime</value> </Data>
 		<Data name="Hashtags"> <value>naptime</value> </Data>
@@ -7921,7 +7921,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461190640140300</value> </Data>
 		<Data name="Tweet"> <value>I don t give a fuck</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -8146,7 +8146,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461227692634100</value> </Data>
 		<Data name="Tweet"> <value>Cnbc just passed it on the news..</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -8196,7 +8196,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461234378350600</value> </Data>
 		<Data name="Tweet"> <value>@MrHarlemIam hi sexy arms</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -8796,7 +8796,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461325755469820</value> </Data>
 		<Data name="Tweet"> <value>Looking at this girl in my class everyday ruins my morning</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -8871,7 +8871,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461339315634180</value> </Data>
 		<Data name="Tweet"> <value>If you pass a utility crew on the road today, offer to buy them coffee or lunch or give a cheer.  These guys have been the heroes of #sandy</value> </Data>
 		<Data name="Hashtags"> <value>sandy</value> </Data>
@@ -9346,7 +9346,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461462082936830</value> </Data>
 		<Data name="Tweet"> <value>Everyone is up and moving early today. It seems people actually wanted to go to class #NotISir #MyBedAwaits</value> </Data>
 		<Data name="Hashtags"> <value>NotISir,MyBedAwaits</value> </Data>
@@ -9421,7 +9421,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461484644081660</value> </Data>
 		<Data name="Tweet"> <value>#Top10FavoriteAlbums the black bar mitzvah</value> </Data>
 		<Data name="Hashtags"> <value>Top10FavoriteAlbums</value> </Data>
@@ -9446,7 +9446,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461485839458300</value> </Data>
 		<Data name="Tweet"> <value>I wish I was @ Fashion Institute of Technology http://t.co/WasSwfZP</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -9471,7 +9471,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461490071515140</value> </Data>
 		<Data name="Tweet"> <value>I stole this pen and its literally worth 400 dollars... That s a felony #onlyasophomore @JakeAngevine</value> </Data>
 		<Data name="Hashtags"> <value>onlyasophomore</value> </Data>
@@ -9821,7 +9821,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461549932621820</value> </Data>
 		<Data name="Tweet"> <value>#Top10FavoriteAlbums port of maimi</value> </Data>
 		<Data name="Hashtags"> <value>Top10FavoriteAlbums</value> </Data>
@@ -10096,7 +10096,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461594522259460</value> </Data>
 		<Data name="Tweet"> <value>Holy shit. Listening to The Talk Show - M. G. Siegler doesn t see why someone would buy and Xbox now that the iPad mini exists.</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -10246,7 +10246,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461607205851140</value> </Data>
 		<Data name="Tweet"> <value>shit changed... now with the little kids.. (@ Green Acres School) http://t.co/ftt5i3cw</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -10321,7 +10321,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461614227103740</value> </Data>
 		<Data name="Tweet"> <value>@mattreadjunk bought two tickets on stubhub for your section Sunday night, damnit</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -10496,7 +10496,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461644732272640</value> </Data>
 		<Data name="Tweet"> <value>#Top10FavoriteAlbums Teflon</value> </Data>
 		<Data name="Hashtags"> <value>Top10FavoriteAlbums</value> </Data>
@@ -10671,7 +10671,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461675916935170</value> </Data>
 		<Data name="Tweet"> <value>8 am lift 💪 #qclax .. Class, break, class, volunteer .. Gona be a busy/productive day 👍</value> </Data>
 		<Data name="Hashtags"> <value>qclax</value> </Data>
@@ -11046,7 +11046,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461790056542200</value> </Data>
 		<Data name="Tweet"> <value>I hope mrs. right puts up with all the bullshit you do!</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -11271,7 +11271,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461810365337600</value> </Data>
 		<Data name="Tweet"> <value>I threw on anything to go to class today.</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -11571,7 +11571,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461865549815800</value> </Data>
 		<Data name="Tweet"> <value>I like real potheads who smoke a few times a day and actually know there shit. Not you wannabes.</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -11821,7 +11821,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265461905844477950</value> </Data>
 		<Data name="Tweet"> <value>#Top10FavoriteAlbums jazz- queen #lovefreddy</value> </Data>
 		<Data name="Hashtags"> <value>Top10FavoriteAlbums,lovefreddy</value> </Data>
@@ -12371,7 +12371,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462038178975740</value> </Data>
 		<Data name="Tweet"> <value>@brettpeppe3 idk just being retarded</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -12421,7 +12421,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462060282941440</value> </Data>
 		<Data name="Tweet"> <value>@BUlmerIII good, bitchhhhh</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -12821,7 +12821,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462123407228930</value> </Data>
 		<Data name="Tweet"> <value>@Bass_isMVB idk wyd thoe.</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -12846,7 +12846,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462124975902720</value> </Data>
 		<Data name="Tweet"> <value>Class is soooooo boringgggg</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -13171,7 +13171,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462194727186430</value> </Data>
 		<Data name="Tweet"> <value>I passed two gas stations on a 5-mile bike ride this morning.  One had a line of cars and  @ Columbus Square http://t.co/NFf3gWPk</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -13371,7 +13371,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462219721023500</value> </Data>
 		<Data name="Tweet"> <value>@Jacomo419 @iiAmMcPrettii @iAmByron_Back @InLoveWithMeNow @iRank01 @iSMOKEuCHOKE @isuckthatdick @Jantraep @jaybryant82 where s mines. Lol</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -13421,7 +13421,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462222262771700</value> </Data>
 		<Data name="Tweet"> <value>@imodelpop so roll up bum</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -13746,7 +13746,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462298448109570</value> </Data>
 		<Data name="Tweet"> <value>Everyone in class has wifi but me 😩</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -14271,7 +14271,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462423157350400</value> </Data>
 		<Data name="Tweet"> <value>@alexxxaaxox omg how? Tell him to feel better n I love him</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -14471,7 +14471,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462453729628160</value> </Data>
 		<Data name="Tweet"> <value>Boo..I have classes today </value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -15046,7 +15046,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462600236683260</value> </Data>
 		<Data name="Tweet"> <value>I m at The Gilder Lehrman Institute of American History (New York, NY) https://t.co/Y4cRLh6k</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -15096,7 +15096,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462608231006200</value> </Data>
 		<Data name="Tweet"> <value>Pass me liquor instead 👌</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -15146,7 +15146,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462622114168830</value> </Data>
 		<Data name="Tweet"> <value>@Datboiii: Morning sexy==_morning sexy</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -15846,7 +15846,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462721821155330</value> </Data>
 		<Data name="Tweet"> <value>@LadyDocToBe #shitsAboutToGetReal ?</value> </Data>
 		<Data name="Hashtags"> <value>shitsAboutToGetReal</value> </Data>
@@ -15921,7 +15921,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462730725658620</value> </Data>
 		<Data name="Tweet"> <value>@DOEDoobs: Good morning RT @zahralyzaa: I like real potheads who smoke a few times a day and actually know there shit. Not you wannabes.</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -16196,7 +16196,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462776137400320</value> </Data>
 		<Data name="Tweet"> <value>I m getting gassssss! 😭😂😂 no line and no wait! 🙌🙌🙌🙌</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -16296,7 +16296,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462794659438600</value> </Data>
 		<Data name="Tweet"> <value>@girlsinyogapant damn</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -16646,7 +16646,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462872941920260</value> </Data>
 		<Data name="Tweet"> <value>First Hurricane Sandy, now a 2.0 earthquake,  and coming is a noreastern.  Mother Nature is probably punishing us for the jersey shore</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -16746,7 +16746,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462884300111870</value> </Data>
 		<Data name="Tweet"> <value>This week is going to kick my ass👊</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -16846,7 +16846,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265462924498309120</value> </Data>
 		<Data name="Tweet"> <value>Our school is going to turn into digrassi if they actually brig long beach high school in.</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -17521,7 +17521,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463021734875140</value> </Data>
 		<Data name="Tweet"> <value>snap chatting in class. #obsession</value> </Data>
 		<Data name="Hashtags"> <value>obsession</value> </Data>
@@ -17696,7 +17696,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463052676235260</value> </Data>
 		<Data name="Tweet"> <value>I m at Encompass Elements (Colmar, PA) http://t.co/OskWYpp3</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -18321,7 +18321,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463176827641860</value> </Data>
 		<Data name="Tweet"> <value>We peer graded essays in class. Asked wrong girl if I can write on her paper. Sorry I dont know either of your names. #idgaf</value> </Data>
 		<Data name="Hashtags"> <value>idgaf</value> </Data>
@@ -18521,7 +18521,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463210629558270</value> </Data>
 		<Data name="Tweet"> <value>Just burst out laughing in class..... Ask me why? IM FUCKING BORED.</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -18746,7 +18746,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463262898970620</value> </Data>
 		<Data name="Tweet"> <value>when someone asks me what my Style of music is, my answer is... The kind that lifts you into #nostalgia @EDMsnob   https://t.co/dJrDFCTY</value> </Data>
 		<Data name="Hashtags"> <value>nostalgia</value> </Data>
@@ -19121,7 +19121,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463327231201280</value> </Data>
 		<Data name="Tweet"> <value>@Bisexualhot @THEEMARCDUPREE thank u for the love</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -19371,7 +19371,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463363478360060</value> </Data>
 		<Data name="Tweet"> <value>worked so hard on this presentation but now I have a fever and feel nauseous so I won t even make it to class today 😠</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -19746,7 +19746,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463466893139970</value> </Data>
 		<Data name="Tweet"> <value>Should strangle my sister for making mw miss school -_- but instead I need to take care of her drunk ass.</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -20121,7 +20121,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463544181559300</value> </Data>
 		<Data name="Tweet"> <value>This commute is serious. 4 F trains passed before I could get on one! MTA, PLEASE GET YO LIFE!!!</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -20171,7 +20171,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463548413607940</value> </Data>
 		<Data name="Tweet"> <value>@ajerktookmyname it was on Saturday night when I went too! like port authority was creepy empty!</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -20396,7 +20396,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463593070391300</value> </Data>
 		<Data name="Tweet"> <value>@omarfalcones928: @Bisexualhot @OnThe_QT @THEEMARCDUPREE que rico gracias</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -20546,7 +20546,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463632735911940</value> </Data>
 		<Data name="Tweet"> <value>@sexyselfpics #goodmorning #sexy #ABSolutelyFitBody http://t.co/TNSgSeT3</value> </Data>
 		<Data name="Hashtags"> <value>goodmorning,sexy,ABSolutelyFitBody</value> </Data>
@@ -20896,7 +20896,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463731646001150</value> </Data>
 		<Data name="Tweet"> <value>sorprendentemente estoy muuuuyy de buenasss :)</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -21071,7 +21071,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463788126470140</value> </Data>
 		<Data name="Tweet"> <value>RT @fdnyhockey: Residents Of Storm Fire-Devastated Breezy Point Gather For Sunday Mass « CBS New York http://t.co/X0DfPVnf</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -21096,7 +21096,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463790559191040</value> </Data>
 		<Data name="Tweet"> <value>Yess I got power last night #ThankGod 🙏😬</value> </Data>
 		<Data name="Hashtags"> <value>ThankGod</value> </Data>
@@ -21571,7 +21571,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463902538694660</value> </Data>
 		<Data name="Tweet"> <value>Not going to argue with her young minded ass</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -21746,7 +21746,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265463939066896400</value> </Data>
 		<Data name="Tweet"> <value>Reflecting on blessd wknd amongst NY chaos  a grandma lookalike passed me. Thx 4 reminder Mom #ItsTheLittleThings right @SashaAlexander1?</value> </Data>
 		<Data name="Hashtags"> <value>ItsTheLittleThings</value> </Data>
@@ -21996,7 +21996,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464000253415420</value> </Data>
 		<Data name="Tweet"> <value>Nous serons de nombreux coureurs du #nycmarathon à nous retrouver le 25 nov au Marathon de La Rochelle avec le t-shirt orange @bfmtv</value> </Data>
 		<Data name="Hashtags"> <value>nycmarathon</value> </Data>
@@ -22846,7 +22846,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464176087019520</value> </Data>
 		<Data name="Tweet"> <value>“@EvilMikeTomlin: Jets say they don t anticipate changing QBs or winning anymore games this season”</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -22871,7 +22871,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464176686800900</value> </Data>
 		<Data name="Tweet"> <value>@KEVFORDABREAD: What s the difference between a guy hoe(whore) and a chick hoe (whore) guy whores don t look as bad as girl whores</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -23121,7 +23121,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464225638514700</value> </Data>
 		<Data name="Tweet"> <value>@Bpetttx3 for renowned arts leaders. It was due but I missed class and need to email it!! 😱😱😱</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -23196,7 +23196,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464240943546370</value> </Data>
 		<Data name="Tweet"> <value>Platters hit the spot last night</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -23346,7 +23346,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464274711871500</value> </Data>
 		<Data name="Tweet"> <value>@JusTWin92 suchhhh bullshit</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -23821,7 +23821,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464362792263680</value> </Data>
 		<Data name="Tweet"> <value>#EmbarrassYourFriend lmaoo this dayyy ! @uh_j_lynn http://t.co/ZWwgoWZN</value> </Data>
 		<Data name="Hashtags"> <value>EmbarrassYourFriend</value> </Data>
@@ -23921,7 +23921,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464392194334720</value> </Data>
 		<Data name="Tweet"> <value>@RayleneXXX Are there any opportunities for fans in NYC to see you to say hello or give you a present?</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -24046,7 +24046,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464431419469820</value> </Data>
 		<Data name="Tweet"> <value>Whose tunnel I gotta drain to get some L train service up in this bitch? #sandy</value> </Data>
 		<Data name="Hashtags"> <value>sandy</value> </Data>
@@ -24671,7 +24671,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464579360956400</value> </Data>
 		<Data name="Tweet"> <value>@sarahhrichh digrassi here we come !!!</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -24871,7 +24871,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464616421822460</value> </Data>
 		<Data name="Tweet"> <value>@fuckxarthur 😏</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -25221,7 +25221,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464665142878200</value> </Data>
 		<Data name="Tweet"> <value>@GovChristie please RT and follow @Save_the_Shore , it is a student-run, non profit group that is trying to help aid the victims of Sandy</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -25246,7 +25246,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464666006904830</value> </Data>
 		<Data name="Tweet"> <value>@Steph_dance I don t even remember haha idk when the last time I had class was before this whole sandy fiasco</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -25596,7 +25596,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464755936952320</value> </Data>
 		<Data name="Tweet"> <value>Saw a really sexy guy waiting for the train. Then saw him spit on the ground. That s not sexy.</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -25946,7 +25946,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464824178298880</value> </Data>
 		<Data name="Tweet"> <value>@fuckxarthur 😚</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -26496,7 +26496,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464944114405380</value> </Data>
 		<Data name="Tweet"> <value>My dog just jumped up on the couch, peed on me, than ran full sleep into the sliding glass door. Wut.</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -26521,7 +26521,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464950246473730</value> </Data>
 		<Data name="Tweet"> <value>wait for the #F during first morning rush with subway service  @ MTA Subway - Delancey St/Essex St (F/J/M/Z) http://t.co/31T2UcU6</value> </Data>
 		<Data name="Hashtags"> <value>F</value> </Data>
@@ -26846,7 +26846,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265464997826682880</value> </Data>
 		<Data name="Tweet"> <value>Starting my morning off listening to my husband @FlavGabel01 ( I believe ) which is on the Gabel Album ugh. I have to meet him</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -27096,7 +27096,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265465060128866300</value> </Data>
 		<Data name="Tweet"> <value>Happy to have @ChrisCuomo @ABC ride along in a @RedCross vehicle passing out hot meals to those affected by #Sandy http://t.co/NhHOOXXC</value> </Data>
 		<Data name="Hashtags"> <value>Sandy</value> </Data>
@@ -27346,7 +27346,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265465129032884220</value> </Data>
 		<Data name="Tweet"> <value>wait for the #F during first morning rush with subway service  @ MTA Subway - Delancey St/Essex St (F/J/M/Z) http://t.co/opmuVIRC</value> </Data>
 		<Data name="Hashtags"> <value>F</value> </Data>
@@ -27996,7 +27996,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265465237216587780</value> </Data>
 		<Data name="Tweet"> <value>Peyton Manning s passing yards this season: 2,404. Andrew Luck s passing yards this season: 2,404. Broncos 5-3, Colts 5-3.” @ChrisDenkers</value> </Data>
 		<Data name="Hashtags"> <value></value> </Data>
@@ -28421,7 +28421,7 @@
 	</Polygon>
 	</Placemark>
 <Placemark>
-<styleUrl>#contains_profanity</styleUrl>	<ExtendedData>
+<styleUrl>#no_profanity</styleUrl>	<ExtendedData>
 		<Data name="TweetID"> <value>265465317545898000</value> </Data>
 		<Data name="Tweet"> <value>Yes... I will be wearing my sunglasses all day long today lol #sunglasses #advil</value> </Data>
 		<Data name="Hashtags"> <value>sunglasses,advil</value> </Data>

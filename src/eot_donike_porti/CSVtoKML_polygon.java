@@ -6,11 +6,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class CSVtoKML_polygon {
-    /* declare public String array by reading txt file via read_profanity_list funtion */
 
 
         public static String[] read_profanity_list() throws IOException {
-
+            /* reads list from file and returns as String List */
             BufferedReader reader = new BufferedReader(new FileReader("/Users/simondonike/Documents/GitHub/eot_donike_porti/out/production/final_assignment/eot_donike_porti/profanity_list.txt"));
             List<String> data_list = new ArrayList<String>();
             String line_string;
@@ -24,63 +23,66 @@ public class CSVtoKML_polygon {
 
 
         public static String create_polygon_string(String lon_string, String lat_string) {
-            double lon_double = Double.parseDouble(lon_string);
-            double lat_double = Double.parseDouble(lat_string);
-            double shift_by = 0.0012;
+            /* receives lat/lon of tweet, creates polygon around point, returns poly string in kml format */
+
+            double lon_double = Double.parseDouble(lon_string); // convert string from csv to double
+            double lat_double = Double.parseDouble(lat_string); // convert string from csv to double
+            double shift_by = 0.0012;                           // define size of addition/substraction to/from point
 
             String polygon_string;
-            polygon_string = "\t<Polygon>\n"
+            /* create kml string in polygon style */
+            polygon_string =
+                    /* opening polygon tags */
+                    "\t<Polygon>\n"
                     + "\t\t<extrude>1</extrude>\n"
                     + "\t\t<altitudeMode>relativeToGround</altitudeMode>\n"
                     + "\t\t<outerBoundaryIs>\n"
                     + "\t\t<LinearRing>\n"
                     + "\t\t\t<coordinates>\n"
 
+                    /* perform addition/substraction to point to create polygon around it */
                     + "\t\t\t\t" + Double.toString(lon_double+shift_by) + "," + Double.toString(lat_double) + ",100" + "\n"
                     + "\t\t\t\t" + Double.toString(lon_double) + "," + Double.toString(lat_double + shift_by) + ",100" + "\n"
                     + "\t\t\t\t" + Double.toString(lon_double - shift_by) + "," + Double.toString(lat_double) + ",100" + "\n"
                     + "\t\t\t\t" + Double.toString(lon_double) + "," + Double.toString(lat_double - shift_by) + ",100" + "\n"
                     + "\t\t\t\t" + Double.toString(lon_double+shift_by) + "," + Double.toString(lat_double) + ",100" + "\n" // repeat 1st coordinate to close polygon
 
+                    /* closing polygon tags */
                     + "\t\t\t</coordinates>\n"
                     + "\t\t</LinearRing>\n"
                     + "\t\t</outerBoundaryIs>\n"
                     + "\t</Polygon>\n"
                     + "\t</Placemark>\n";
 
-            return polygon_string;
+            return polygon_string; // return finished poly kml string
         }
 
 
         public static String create_profanity_color_string(String tweet) throws IOException {
+            /* gets tweet string, checks for profanity, returns according kml template style string */
+
             /* get list of profanity from text reader function */
             List<String> profanity_list = Arrays.asList(read_profanity_list());
             /* iterate over profanity list */
             for (int i = 0; i < profanity_list.size(); i++) {
-                /* ckeck if tweet contains each word */
-                if (tweet.contains(profanity_list.get(i))) {
+                /* ckeck if tweet contains each word
+                   putting spaces around each word, so that
+                   'passed' is not flagged for containing 'ass' */
+                if (tweet.contains(" "+ profanity_list.get(i) + " ")) {
                     /* if tweet contains word, return kml string for according style */
                     System.out.println(profanity_list.get(i));
                     return "<styleUrl>#contains_profanity</styleUrl>";
-                }
-
-            }
-
-
+                } // close if statement
+            } // close for loop
+            /* if no return from profanity check, return kml template string for no profanity */
             return "<styleUrl>#no_profanity</styleUrl>";
-            /* gets tweet, checks if profanity in tweet, returns according style
-            if (tweet.contains(read_profanity_list())) {
-                return "<styleUrl>contains_profanity</styleUrl>\n";
-            } else {
-                return "<styleUrl>_no_profanity</styleUrl>\n";
-            }*/
-        }
+        } // close method
 
         public static String create_styles() {
-            String style_section;
-            style_section =  "<Style id=\"no_profanity\">\n"
+            /* creating kml style templates for polygons */
+            String style_section =  "<Style id=\"no_profanity\">\n"
                     + "<LineStyle>\n"
-                    + "<width>1.5</width>\n"
+                    + "<width>0.5</width>\n"
                     + "</LineStyle>\n"
                     + "<PolyStyle>\n"
                     + "<color>FF14F000</color>\n"
@@ -89,21 +91,23 @@ public class CSVtoKML_polygon {
 
                     + "<Style id=\"contains_profanity\">\n"
                     + "<LineStyle>\n"
-                    + "<width>1.5</width>\n"
+                    + "<width>0.5</width>\n"
                     + "</LineStyle>\n"
                     + "<PolyStyle>\n"
                     + "<color>FF1400FF</color>\n"
                     + "</PolyStyle>\n"
                     + "</Style>\n\n";
-
-
             return style_section;
             }
 
 
 
         public static void read_convert_save_polygon(String csvFile) {
+            /* opens csv file, writes kml file and cals functions to create polygon and check for profanity,
+            writes finished kml file */
+
             try {
+                /* open file csv file via file reader + buffered reader */
                 File file = new File(csvFile);
                 FileReader fr = new FileReader(file);
                 BufferedReader br = new BufferedReader(fr);
@@ -120,7 +124,7 @@ public class CSVtoKML_polygon {
 
                 /* iterate over csv file by lines until line is empty */
                 while((line = br.readLine()) != null) {
-                    /* create Array per line, separate based on semicolon */
+                    /* create Array per line, separated based on semicolon */
                     tempArr = line.split(";");
 
                     /* check if temp array is != id, therefore excluding the csv header line */
@@ -128,19 +132,21 @@ public class CSVtoKML_polygon {
                         /* fill temp string w/ kml placemark syntax + info from iterated array incl. indentation */
                         String temp_placemark = "<Placemark>\n"                                                             // start with opening placemark tag
 
-                                + create_profanity_color_string(tempArr[5])
+                                + create_profanity_color_string(tempArr[5])                                                 // call for profanity check method, returns kml style tag
+
+
                                 + "\t<ExtendedData>\n"                                                                      // open extended data tag
                                 + "\t\t<Data name=\"TweetID\"> " + "<value>" + tempArr[0] + "</value> </Data>\n"            // sub-tag w/TweetID
                                 + "\t\t<Data name=\"Tweet\"> " + "<value>" + tempArr[5] + "</value> </Data>\n"              // sub-tag w/Tweet
                                 + "\t\t<Data name=\"Hashtags\"> " + "<value>" + tempArr[3] + "</value> </Data>\n"           // sub-tag w/Hashtags, only shows up in GE if hashtags in tweet
-                                + "\t\t<Data name=\"TimeStamp\" >" + "<value>" + tempArr[6].replace(' ', 'T') + ":00" + "</value> </Data>\n"          // sub-tag w/CreatedAt in corect Format
+                                + "\t\t<Data name=\"TimeStamp\" >" + "<value>" + tempArr[6].replace(' ', 'T') + ":00" + "</value> </Data>\n"          // sub-tag w/CreatedAt in correct Format
                                 + "\t\t<Data name=\"UserID\"> " + "<value>" + tempArr[7] + "</value> </Data>\n"             // sub-tag w/userID
                                 + "\t</ExtendedData>\n"                                                                     // close extended data tag
 
-                                /* magic to turn timestamp into dateTime format: (YYYY-MM-DDThh:mm:sszzzzzz) */
+                                /* turn timestamp into dateTime format: (YYYY-MM-DDThh:mm:sszzzzzz), same before, then write to correct kml timestamp tags */
                                 + "\t<TimeStamp id=\"" + tempArr[0] + "\"> <when>" + tempArr[6].replace(' ', 'T') + ":00" + "</when>  </TimeStamp>\n"
 
-                                /* Add polygon string */
+                                /* Add polygon string by calling function, returns complete polygon string incl. profanity color stlye */
                                 + create_polygon_string(tempArr[1],tempArr[2]);
 
 
@@ -163,8 +169,7 @@ public class CSVtoKML_polygon {
 
 
 
-            /* end try block (reading csv), defining and closing catch block */
+            /* end try block (reading csv), printing error and closing catch block */
             } catch(IOException ioe) { ioe.printStackTrace(); }
         } // end reader
     } // end CSVtoKML class
-
