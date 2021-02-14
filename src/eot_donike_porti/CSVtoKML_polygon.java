@@ -1,8 +1,27 @@
 package eot_donike_porti;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 public class CSVtoKML_polygon {
+    /* declare public String array by reading txt file via read_profanity_list funtion */
+
+
+        public static String[] read_profanity_list() throws IOException {
+
+            BufferedReader reader = new BufferedReader(new FileReader("/Users/simondonike/Documents/GitHub/eot_donike_porti/out/production/final_assignment/eot_donike_porti/profanity_list.txt"));
+            List<String> data_list = new ArrayList<String>();
+            String line_string;
+            while((line_string = reader.readLine())!=null) {
+                data_list.add(line_string);
+            }
+            reader.close();
+            return data_list.toArray(new String[]{});
+        }
+
+
 
         public static String create_polygon_string(String lon_string, String lat_string) {
             double lon_double = Double.parseDouble(lon_string);
@@ -32,137 +51,51 @@ public class CSVtoKML_polygon {
             return polygon_string;
         }
 
-        public static String create_color_string(String timestamp) {
-            /* get minute from timstamp */
-            String timestamp_clean = timestamp.substring(14, 16);
-            /* calculate percentage of hour from timestamp */
-            double perc = 100*  (Double.parseDouble(timestamp_clean)/60);
 
-            /* return kml style command depending on the percentage */
-            if ( (perc >= 0) & (perc < 10) ) {
-                return "<styleUrl>#perc_10</styleUrl>\n"; }
-            if ( (perc >= 10) & (perc < 20) ) {
-                return "<styleUrl>#perc_20</styleUrl>\n"; }
-            if ( (perc >= 20) & (perc < 30) ) {
-                return "<styleUrl>#perc_30</styleUrl>\n"; }
-            if ( (perc >= 30) & (perc < 40) ) {
-                return "<styleUrl>#perc_40</styleUrl>\n"; }
-            if ( (perc >= 40) & (perc < 50) ) {
-                return "<styleUrl>#perc_50</styleUrl>\n"; }
-            if ( (perc >= 50) & (perc < 60) ) {
-                return "<styleUrl>#perc_60</styleUrl>\n"; }
-            if ( (perc >= 60) & (perc < 70) ) {
-                return "<styleUrl>#perc_70</styleUrl>\n"; }
-            if ( (perc >= 70) & (perc < 80) ) {
-                return "<styleUrl>#perc_80</styleUrl>\n"; }
-            if ( (perc >= 80) & (perc < 90) ) {
-                return "<styleUrl>#perc_90</styleUrl>\n"; }
-            if ( (perc >= 90) & (perc < 100) ) {
-                return "<styleUrl>#perc_100</styleUrl>\n"; }
-            /* if no condition before is met, return other style (all black) */
-            return "<styleUrl>#other</styleUrl>\n";
+        public static String create_profanity_color_string(String tweet) throws IOException {
+            /* get list of profanity from text reader function */
+            List<String> profanity_list = Arrays.asList(read_profanity_list());
+            /* iterate over profanity list */
+            for (int i = 0; i < profanity_list.size(); i++) {
+                /* ckeck if tweet contains each word */
+                if (tweet.contains(profanity_list.get(i))) {
+                    /* if tweet contains word, return kml string for according style */
+                    System.out.println(profanity_list.get(i));
+                    return "<styleUrl>#contains_profanity</styleUrl>";
+                }
+
+            }
+
+
+            return "<styleUrl>#no_profanity</styleUrl>";
+            /* gets tweet, checks if profanity in tweet, returns according style
+            if (tweet.contains(read_profanity_list())) {
+                return "<styleUrl>contains_profanity</styleUrl>\n";
+            } else {
+                return "<styleUrl>_no_profanity</styleUrl>\n";
+            }*/
         }
 
         public static String create_styles() {
             String style_section;
-            style_section =  "<Style id=\"perc_10\">\n"
+            style_section =  "<Style id=\"no_profanity\">\n"
                     + "<LineStyle>\n"
                     + "<width>1.5</width>\n"
                     + "</LineStyle>\n"
                     + "<PolyStyle>\n"
-                    + "<color>FF14F0FF</color>\n"
+                    + "<color>FF14F000</color>\n"
                     + "</PolyStyle>\n"
                     + "</Style>\n\n"
 
-                    + "<Style id=\"perc_20\">\n"
+                    + "<Style id=\"contains_profanity\">\n"
                     + "<LineStyle>\n"
                     + "<width>1.5</width>\n"
                     + "</LineStyle>\n"
                     + "<PolyStyle>\n"
-                    + "<color>FF14F0AA</color>\n"
-                    + "</PolyStyle>\n"
-                    + "</Style>\n\n"
-
-                    + "<Style id=\"perc_30\">\n"
-                    + "<LineStyle>\n"
-                    + "<width>1.5</width>\n"
-                    + "</LineStyle>\n"
-                    + "<PolyStyle>\n"
-                    + "<color>FF14B4FF</color>\n"
-                    + "</PolyStyle>\n"
-                    + "</Style>\n\n"
-
-                    + "<Style id=\"perc_40\">\n"
-                    + "<LineStyle>\n"
-                    + "<width>1.5</width>\n"
-                    + "</LineStyle>\n"
-                    + "<PolyStyle>\n"
-                    + "<color>FF14B4BE</color>\n"
-                    + "</PolyStyle>\n"
-                    + "</Style>\n\n"
-
-                    + "<Style id=\"perc_50\">\n"
-                    + "<LineStyle>\n"
-                    + "<width>1.5</width>\n"
-                    + "</LineStyle>\n"
-                    + "<PolyStyle>\n"
-                    + "<color>FF1478FF</color>\n"
-                    + "</PolyStyle>\n"
-                    + "</Style>\n\n"
-
-                    + "<Style id=\"perc_60\">\n"
-                    + "<LineStyle>\n"
-                    + "<width>1.5</width>\n"
-                    + "</LineStyle>\n"
-                    + "<PolyStyle>\n"
-                    + "<color>FF1478B4</color>\n"
-                    + "</PolyStyle>\n"
-                    + "</Style>\n\n"
-
-                    + "<Style id=\"perc_70\">\n"
-                    + "<LineStyle>\n"
-                    + "<width>1.5</width>\n"
-                    + "</LineStyle>\n"
-                    + "<PolyStyle>\n"
-                    + "<color>FF143CFF</color>\n"
-                    + "</PolyStyle>\n"
-                    + "</Style>\n\n"
-
-                    + "<Style id=\"perc_80\">\n"
-                    + "<LineStyle>\n"
-                    + "<width>1.5</width>\n"
-                    + "</LineStyle>\n"
-                    + "<PolyStyle>\n"
-                    + "<color>FF143CA0</color>\n"
-                    + "</PolyStyle>\n"
-                    + "</Style>\n\n"
-
-                    + "<Style id=\"perc_90\">\n"
-                    + "<LineStyle>\n"
-                    + "<width>1.5</width>\n"
-                    + "</LineStyle>\n"
-                    + "<PolyStyle>\n"
-                    + "<color>FF1400AA</color>\n"
-                    + "</PolyStyle>\n"
-                    + "</Style>\n\n"
-
-                    + "<Style id=\"perc_100\">\n"
-                    + "<LineStyle>\n"
-                    + "<width>1.5</width>\n"
-                    + "</LineStyle>\n"
-                    + "<PolyStyle>\n"
-                    + "<color>FF140078</color>\n"
-                    + "</PolyStyle>\n"
-                    + "</Style>\n\n"
-
-                    + "<Style id=\"other\">\n"
-                    + "<LineStyle>\n"
-                    + "<width>1.5</width>\n"
-                    + "</LineStyle>\n"
-                    + "<PolyStyle>\n"
-                    + "<color>FF00000</color>\n"
+                    + "<color>FF1400FF</color>\n"
                     + "</PolyStyle>\n"
                     + "</Style>\n\n";
+
 
             return style_section;
             }
@@ -195,7 +128,7 @@ public class CSVtoKML_polygon {
                         /* fill temp string w/ kml placemark syntax + info from iterated array incl. indentation */
                         String temp_placemark = "<Placemark>\n"                                                             // start with opening placemark tag
 
-                                + create_color_string(tempArr[6])
+                                + create_profanity_color_string(tempArr[5])
                                 + "\t<ExtendedData>\n"                                                                      // open extended data tag
                                 + "\t\t<Data name=\"TweetID\"> " + "<value>" + tempArr[0] + "</value> </Data>\n"            // sub-tag w/TweetID
                                 + "\t\t<Data name=\"Tweet\"> " + "<value>" + tempArr[5] + "</value> </Data>\n"              // sub-tag w/Tweet
