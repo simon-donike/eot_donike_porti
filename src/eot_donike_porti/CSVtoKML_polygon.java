@@ -1,11 +1,25 @@
 package eot_donike_porti;
 
 import java.io.*;
-import java.lang.reflect.Array;
-import java.util.*;
 import java.util.Arrays;
 
 public class CSVtoKML_polygon {
+
+        public static String create_polygon_string(String lon_string, String lat_string) {
+            double lon_double = Double.parseDouble(lon_string);
+            double lat_double = Double.parseDouble(lat_string);
+            double shift_by = 0.0012;
+
+            String polygon;
+            polygon = "\t\t\t\t" + Double.toString(lon_double+shift_by) + "," + Double.toString(lat_double) + ",100" + "\n"
+                    + "\t\t\t\t" + Double.toString(lon_double) + "," + Double.toString(lat_double + shift_by) + ",100" + "\n"
+                    + "\t\t\t\t" +Double.toString(lon_double - shift_by) + "," + Double.toString(lat_double) + ",100" + "\n"
+                    + "\t\t\t\t" +Double.toString(lon_double) + "," + Double.toString(lat_double - shift_by) + ",100" + "\n";
+            return polygon;
+        }
+
+
+
         public static void read_convert_save_polygon(String csvFile) {
             try {
                 File file = new File(csvFile);
@@ -41,15 +55,15 @@ public class CSVtoKML_polygon {
                     tempArr = line.split(";");
 
                     /* From here: create polygon fro central coordinate, append to array as string */
-                    String polygon = "";
 
-                    String tempString = "70.02838340";
+
+                    /*
+                    String tempString = new String(tempArr[]);
+                    System.out.println(tempString);
                     Double tempDouble = Double.parseDouble(tempString);
                     System.out.println(tempDouble);
 
 
-
-                    /*
                     double tempLon = Double.parseDouble(tempArr[1]);
                     double tempLat = Double.parseDouble(tempArr[2]);
                     double shift_by = 0.0012;
@@ -78,15 +92,28 @@ public class CSVtoKML_polygon {
                                 + "\t\t<Data name=\"TweetID\"> " + "<value>" + tempArr[0] + "</value> </Data>\n"            // sub-tag w/TweetID
                                 + "\t\t<Data name=\"Tweet\"> " + "<value>" + tempArr[5] + "</value> </Data>\n"              // sub-tag w/Tweet
                                 + "\t\t<Data name=\"Hashtags\"> " + "<value>" + tempArr[3] + "</value> </Data>\n"           // sub-tag w/Hashtags, only shows up in GE if hastags in tweet
-                                + "\t\t<Data name=\"TimeStamp\" >" + "<value>" + tempArr[6].replace(' ', 'T') + ":00" + "</value> </Data>\n"          // sub-tag w/CreatedAt
+                                + "\t\t<Data name=\"TimeStamp\" >" + "<value>" + tempArr[6].replace(' ', 'T') + ":00" + "</value> </Data>\n"          // sub-tag w/CreatedAt in corect Format
                                 + "\t\t<Data name=\"UserID\"> " + "<value>" + tempArr[7] + "</value> </Data>\n"             // sub-tag w/userID
                                 + "\t</ExtendedData>\n"                                                                     // close extended data tag
 
                                 /* magic to turn timestamp into dateTime format: (YYYY-MM-DDThh:mm:sszzzzzz) */
                                 + "\t<TimeStamp id=\"" + tempArr[0] + "\"> <when>" + tempArr[6].replace(' ', 'T') + ":00" + "</when>  </TimeStamp>\n"
 
-                                + "\t<Point> <coordinates>" + tempArr[1] + "," + tempArr[2]  + "</coordinates> </Point>\n"   // Setting coordinates
-                                + "</Placemark>\n";                                                                         // closing placemark tag
+                                //+ "\t<Point> <coordinates>" + create_polygon_string(tempArr[1],tempArr[2])  + "</coordinates> </Point>\n"   // Setting coordinates
+
+
+                                + "\t<Polygon>\n"
+                                + "\t\t<extrude>1</extrude>\n"
+                                + "\t\t<altitudeMode>relativeToGround</altitudeMode>\n"
+                                + "\t\t<outerBoundaryIs>\n"
+                                + "\t\t<LinearRing>\n"
+                                + "\t\t\t<coordinates>\n"
+                                + create_polygon_string(tempArr[1],tempArr[2])
+                                + "\t\t\t</coordinates>\n"
+                                + "\t\t</LinearRing>\n"
+                                + "\t\t</outerBoundaryIs>\n"
+                                + "\t</Polygon>\n"
+                                + "\t</Placemark>\n";
 
                         /* append kml string with Placemark info */
                         kml = kml + temp_placemark;
