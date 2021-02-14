@@ -8,9 +8,9 @@ import java.util.List;
 public class CSVtoKML_polygon {
 
 
-        public static String[] read_profanity_list() throws IOException {
-            /* reads list from file and returns as String List */
-            BufferedReader reader = new BufferedReader(new FileReader("/Users/simondonike/Documents/GitHub/eot_donike_porti/out/production/final_assignment/eot_donike_porti/profanity_list.txt"));
+        public static String[] read_profanity_list(String working_dir, String profanity_fileName) throws IOException {
+            /* reads list from file and returns as String List, passing down file & path */
+            BufferedReader reader = new BufferedReader(new FileReader(working_dir+profanity_fileName));
             List<String> data_list = new ArrayList<String>();
             String line_string;
             while((line_string = reader.readLine())!=null) {
@@ -34,11 +34,11 @@ public class CSVtoKML_polygon {
             polygon_string =
                     /* opening polygon tags */
                     "\t<Polygon>\n"
-                    + "\t\t<extrude>1</extrude>\n"
-                    + "\t\t<altitudeMode>relativeToGround</altitudeMode>\n"
-                    + "\t\t<outerBoundaryIs>\n"
-                    + "\t\t<LinearRing>\n"
-                    + "\t\t\t<coordinates>\n"
+                    + "\t\t<extrude>1</extrude>\n"                              // enabling extruding polygons
+                    + "\t\t<altitudeMode>relativeToGround</altitudeMode>\n"     // define z value as relative to ground
+                    + "\t\t<outerBoundaryIs>\n"                                 // opening outer boundary tag for polygon
+                    + "\t\t<LinearRing>\n"                                      // defining boundary as linear ring
+                    + "\t\t\t<coordinates>\n"                                   // opening coordinate tag
 
                     /* perform addition/substraction to point to create polygon around it */
                     + "\t\t\t\t" + Double.toString(lon_double+shift_by) + "," + Double.toString(lat_double) + ",100" + "\n"
@@ -47,7 +47,7 @@ public class CSVtoKML_polygon {
                     + "\t\t\t\t" + Double.toString(lon_double) + "," + Double.toString(lat_double - shift_by) + ",100" + "\n"
                     + "\t\t\t\t" + Double.toString(lon_double+shift_by) + "," + Double.toString(lat_double) + ",100" + "\n" // repeat 1st coordinate to close polygon
 
-                    /* closing polygon tags */
+                    /* closing all polygon tags */
                     + "\t\t\t</coordinates>\n"
                     + "\t\t</LinearRing>\n"
                     + "\t\t</outerBoundaryIs>\n"
@@ -58,11 +58,11 @@ public class CSVtoKML_polygon {
         }
 
 
-        public static String create_profanity_color_string(String tweet) throws IOException {
+        public static String create_profanity_color_string(String tweet, String working_dir, String profanity_fileName) throws IOException {
             /* gets tweet string, checks for profanity, returns according kml template style string */
 
-            /* get list of profanity from text reader function */
-            List<String> profanity_list = Arrays.asList(read_profanity_list());
+            /* get list of profanity from text reader function, passing down file & path of list */
+            List<String> profanity_list = Arrays.asList(read_profanity_list(working_dir,profanity_fileName));
             /* iterate over profanity list */
             for (int i = 0; i < profanity_list.size(); i++) {
                 /* ckeck if tweet contains each word
@@ -102,13 +102,13 @@ public class CSVtoKML_polygon {
 
 
 
-        public static void read_convert_save_polygon(String csvFile) {
+        public static void read_convert_save_polygon(String working_dir, String csv_fileName, String profanity_fileName) {
             /* opens csv file, writes kml file and cals functions to create polygon and check for profanity,
             writes finished kml file */
 
             try {
                 /* open file csv file via file reader + buffered reader */
-                File file = new File(csvFile);
+                File file = new File(working_dir,csv_fileName);
                 FileReader fr = new FileReader(file);
                 BufferedReader br = new BufferedReader(fr);
                 String line = "";
@@ -132,7 +132,7 @@ public class CSVtoKML_polygon {
                         /* fill temp string w/ kml placemark syntax + info from iterated array incl. indentation */
                         String temp_placemark = "<Placemark>\n"                                                             // start with opening placemark tag
 
-                                + create_profanity_color_string(tempArr[5])                                                 // call for profanity check method, returns kml style tag
+                                + create_profanity_color_string(tempArr[5],working_dir,profanity_fileName)                                                 // call for profanity check method, returns kml style tag
 
 
                                 + "\t<ExtendedData>\n"                                                                      // open extended data tag

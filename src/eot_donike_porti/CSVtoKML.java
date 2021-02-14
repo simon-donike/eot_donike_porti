@@ -3,9 +3,9 @@ package eot_donike_porti;
 import java.io.*;
 
 public class CSVtoKML {
-        public static void read_convert_save(String csvFile) {
+        public static void read_convert_save(String working_dir, String csv_fileName) {
             try {
-                File file = new File(csvFile);
+                File file = new File(working_dir+csv_fileName);
                 FileReader fr = new FileReader(file);
                 BufferedReader br = new BufferedReader(fr);
                 String line = "";

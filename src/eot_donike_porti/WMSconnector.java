@@ -16,41 +16,33 @@ public class WMSconnector {
     public BufferedImage getWMSimage() {
 
         WebMapServer wms = null;
-        URL connectionURL = null;
+        URL wmsURL = null;
 
         try {
-            connectionURL = new URL("http://maps.heigit.org/osm-wms/wms");
-        } catch (MalformedURLException e) {
+            wmsURL = new URL("http://maps.heigit.org/osm-wms/wms");
+        }
+        catch (MalformedURLException e) {
             e.printStackTrace();
         }
 
         try {
             //Creating a new WebMapServer
-            wms = new WebMapServer(connectionURL);
-            //Creating a new request for the WebMapServer
+            wms = new WebMapServer(wmsURL);
             GetMapRequest request = wms.createGetMapRequest();
-            //setting the version of the WMS
-            request.setVersion("1.3.0");
-            //Setting the format of the image to request
-            request.setFormat("image/png");
-            //setting the dimensions of the requested image
-            request.setDimensions(2000, 2000);
-            //setting the background of the image transparent
-            request.setTransparent(true);
-            //This sets CRS=EPSG:XXXX NOT SRS=EPSG:XXXX so it works only with Version=1.3.0
-            //setting the SRS of the request
-            request.setSRS("EPSG:4326");
-            //setting the bounding-box for the request
-            request.setBBox("42.32,-71.13,42.42,-71.03");
-            //System.out.println(request.toString());
-            //setting the layer to request
-            request.addLayer("osm_auto:all", "default");
-            //sending the request
-            GetMapResponse response = (GetMapResponse) wms.issueRequest(request);
-            //reading the requested image
-            BufferedImage image = ImageIO.read(response.getInputStream());
 
-            return image;
+            /* setting parameters of request, hardcoding request parameters :( */
+            request.setVersion("1.3.0");
+            request.setFormat("image/png");
+            request.setDimensions(2000, 2000);
+            request.setTransparent(true);
+            request.setSRS("EPSG:4326");
+            request.setBBox("42.32,-71.13,42.42,-71.03");
+            request.addLayer("osm_auto:all", "default");
+            /* send request */
+            GetMapResponse response = (GetMapResponse) wms.issueRequest(request);
+            /* reading response via input stream, saving as BI */
+            BufferedImage return_image = ImageIO.read(response.getInputStream());
+            return return_image;
 
         } catch (Exception e) {
             e.printStackTrace();
