@@ -10,18 +10,18 @@ This repository contains Java classes completing the following tasks:
 
 ## Flowcharts:  
 GoogleEarthTweetMapper.java - main  
-![alt text](https://github.com/simon-donike/wot_donike_porti/blob/master/images/chart_main.png?raw=true)  
+![alt text](https://github.com/simon-donike/eot_donike_porti/blob/main/images/chart_main.png?raw=true)  
   
  
 WMSconnector.java  
-![alt text](https://github.com/simon-donike/wot_donike_porti/blob/master/images/chart_WMSconnector.png?raw=true)  
+![alt text](https://github.com/simon-donike/eot_donike_porti/blob/main/images/chart_WMSconnector.png?raw=true)  
   
  
-CSVtoKML.java 
-![alt text](https://github.com/simon-donike/wot_donike_porti/blob/master/images/chart_point.png?raw=true)  
+CSVtoKML.java  
+![alt text](https://github.com/simon-donike/eot_donike_porti/blob/main/images/chart_point.png?raw=true)  
   
 
 CSVtoKML_polygon.java  
-![alt text](https://github.com/simon-donike/wot_donike_porti/blob/master/images/chart_polygon.png?raw=true)  
+![alt text](https://github.com/simon-donike/eot_donike_porti/blob/main/images/chart_polygon.png?raw=true)  
 The polygons are created by adding/substracting to the coordinates according to the following schema:  
-![alt text](https://github.com/simon-donike/wot_donike_porti/blob/master/images/shift_by.png?raw=true)  
+![alt text](https://github.com/simon-donike/eot_donike_porti/blob/main/images/shift_by.png?raw=true)  
