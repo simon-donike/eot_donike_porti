@@ -52,7 +52,7 @@ public class WMSconnector {
 
 
     /* function to save image, returns boolean if it worked or not */
-    public boolean saveImage(BufferedImage img) {
+    public boolean save_image(BufferedImage img) {
         /* save as File data type and set name */
         File output_file = new File("output_WMS.png");
 

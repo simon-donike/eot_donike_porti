@@ -27,7 +27,7 @@ public class CSVtoKML_polygon {
 
             double lon_double = Double.parseDouble(lon_string); // convert string from csv to double
             double lat_double = Double.parseDouble(lat_string); // convert string from csv to double
-            double shift_by = 0.0012;                           // define size of addition/substraction to/from point
+            double shift_by = 0.0015;                           // define size of addition/substraction to/from point
 
             String polygon_string;
             /* create kml string in polygon style */
@@ -68,7 +68,7 @@ public class CSVtoKML_polygon {
                 /* ckeck if tweet contains each word
                    putting spaces around each word, so that
                    'passed' is not flagged for containing 'ass' */
-                if (tweet.contains(" "+ profanity_list.get(i) + " ")) {
+                if (tweet.contains(" "+ profanity_list.get(i))) {
                     /* if tweet contains word, return kml string for according style */
                     //System.out.println(profanity_list.get(i)); // print out found words
                     return "<styleUrl>#contains_profanity</styleUrl>";
