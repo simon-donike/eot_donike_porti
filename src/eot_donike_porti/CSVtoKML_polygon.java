@@ -58,17 +58,17 @@ public class CSVtoKML_polygon {
         }
 
 
-        public static String create_profanity_color_string(String tweet, String working_dir, String profanity_fileName) throws IOException {
+        public static String create_profanity_color_string(String tweet, String[] profanity_list) throws IOException {
             /* gets tweet string, checks for profanity, returns according kml template style string */
 
             /* get list of profanity from text reader function, passing down file & path of list */
-            List<String> profanity_list = Arrays.asList(read_profanity_list(working_dir,profanity_fileName));
+            //List<String> profanity_list = Arrays.asList(read_profanity_list(working_dir,profanity_fileName));
             /* iterate over profanity list */
-            for (int i = 0; i < profanity_list.size(); i++) {
+            for (int i = 0; i < profanity_list.length; i++) {
                 /* ckeck if tweet contains each word
                    putting spaces around each word, so that
                    'passed' is not flagged for containing 'ass' */
-                if (tweet.contains(" "+ profanity_list.get(i))) {
+                if (tweet.contains(" "+ profanity_list[i])) {
                     /* if tweet contains word, return kml string for according style */
                     //System.out.println(profanity_list.get(i)); // print out found words
                     return "<styleUrl>#contains_profanity</styleUrl>";
@@ -120,7 +120,7 @@ public class CSVtoKML_polygon {
                         + "<Document>\n\n"
                         + create_styles(); // insert style section of predefined styles
 
-
+                String[] profanity_list = read_profanity_list(working_dir,profanity_fileName);
 
                 /* iterate over csv file by lines until line is empty */
                 while((line = br.readLine()) != null) {
@@ -132,7 +132,7 @@ public class CSVtoKML_polygon {
                         /* fill temp string w/ kml placemark syntax + info from iterated array incl. indentation */
                         String temp_placemark = "<Placemark>\n"                                                             // start with opening placemark tag
 
-                                + create_profanity_color_string(tempArr[5],working_dir,profanity_fileName)                                                 // call for profanity check method, returns kml style tag
+                                + create_profanity_color_string(tempArr[5],profanity_list)                                                 // call for profanity check method, returns kml style tag
 
 
                                 + "\t<ExtendedData>\n"                                                                      // open extended data tag
